@@ -1,0 +1,29 @@
+.slider-wrapper {
+    width: 1000px;
+    height: 600px;  
+    display: flex; 
+    justify-content: space-between;
+}
+
+.slider {
+    width: 900px;
+    position: relative;
+}
+
+.slider img {
+    width: 900px;
+    height: 600px;
+}
+.item {
+    position: absolute;
+    /* display: none; */
+    opacity: 0.5;
+    transition: all 1.5s;
+    right: -5000px;
+}
+
+.item.active{
+    display: block;
+    opacity: 1;
+    right: 0;
+}
